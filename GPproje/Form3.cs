@@ -10,13 +10,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace GPproje
 {
     public partial class Form3 : Form
+    
+
     {
         private float yaricapDegisimi = 0;
+        SqlConnection baglanti = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=GPproje;Integrated Security=True;TrustServerCertificate=True");
 
         public Form3()
         {
@@ -57,7 +60,7 @@ namespace GPproje
             }
         }
 
-        
+
         private void label1_Click(object sender, EventArgs e)
         {
         }
@@ -66,7 +69,7 @@ namespace GPproje
         {
         }
 
-        
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             timer1.Stop();
@@ -79,7 +82,7 @@ namespace GPproje
             }
         }
 
-    
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             timer1.Stop();
@@ -93,7 +96,7 @@ namespace GPproje
             }
         }
 
-        
+
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             timer1.Stop();
@@ -106,7 +109,7 @@ namespace GPproje
             }
         }
 
-        
+
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             timer1.Stop();
@@ -118,49 +121,79 @@ namespace GPproje
                 this.Hide();
             }
         }
-          
+
 
         private void FilmGetirVeAc(string secilenMod)
         {
+            string sorgu = @"
+        SELECT TOP 1 * FROM Filmler AS f 
+        WHERE Mod = @pMod 
+          AND ID NOT IN (SELECT FilmId FROM Izlenenler)
+          AND (
+              f.SiraNo = 1 
+              OR f.SiraNo IS NULL 
+              OR EXISTS (
+                  SELECT 1 FROM Izlenenler 
+                  WHERE FilmId = (
+                      SELECT TOP 1 ID FROM Filmler 
+                      WHERE SeriID = f.SeriID AND SiraNo = f.SiraNo - 1
+                  )
+              )
+          )
+        ORDER BY NEWID()";
 
-            string connectionString = @"Server=.\SQLEXPRESS;Database=GPproje;Trusted_Connection=True;TrustServerCertificate=True;";
-            string sorgu = "SELECT TOP 1 FilmAdi, AfisPath, FragmanLink, Konu FROM Filmler WHERE Mod = @pMod ORDER BY NEWID()";
-
-            using (SqlConnection baglanti = new SqlConnection(connectionString))
+            try
             {
-                using (SqlCommand komut = new SqlCommand(sorgu, baglanti))
+                if (baglanti.State == ConnectionState.Closed)
                 {
-                    komut.Parameters.AddWithValue("@pMod", secilenMod);
+                    baglanti.Open();
+                }
 
-                    try
-                    {
-                        baglanti.Open();
-                        SqlDataReader oku = komut.ExecuteReader();
+                SqlCommand komut = new SqlCommand(sorgu, baglanti);
+                komut.Parameters.AddWithValue("@pMod", secilenMod);
+                SqlDataReader oku = komut.ExecuteReader();
 
-                        if (oku.Read())
-                        {
-                            Form4 f4 = new Form4();
+                if (oku.Read())
+                {
+                    string secilenFilmId = oku["ID"].ToString();
+                    string filmAdi = oku["FilmAdi"].ToString();
+                    string afisPath = oku["AfisPath"].ToString();
+                    string fragmanLink = oku["FragmanLink"].ToString();
+                    string konu = oku["Konu"].ToString();
 
-                           
-                            f4.GelenFilmAdi = oku["FilmAdi"].ToString();
-                            f4.GelenAfisPath = oku["AfisPath"].ToString();
-                            f4.GelenFragmanLink = oku["FragmanLink"].ToString();
-                            f4.GelenFilmKonu = oku["Konu"].ToString();
+                    oku.Close(); 
 
-                            f4.Show();
-                            this.Hide(); 
-                        }
-                        else
-                        {
-                            MessageBox.Show("Bu moda uygun bir film bulunamadı.");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("SQL Bağlantı Hatası: " + ex.Message);
-                    }
+                    string kayitSorgusu = "INSERT INTO Izlenenler (KullaniciId, FilmId) VALUES (1, @filmId)";
+                    SqlCommand kayitKomutu = new SqlCommand(kayitSorgusu, baglanti);
+                    kayitKomutu.Parameters.AddWithValue("@filmId", secilenFilmId);
+                    kayitKomutu.ExecuteNonQuery();
+
+                    Form4 f4 = new Form4();
+                    f4.GelenFilmAdi = filmAdi;
+                    f4.GelenAfisPath = afisPath;
+                    f4.GelenFragmanLink = fragmanLink;
+                    f4.GelenFilmKonu = konu;
+
+                    f4.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    oku.Close();
+                    MessageBox.Show("Seçilen modda izlenmemiş film kalmadı veya sorgu boş döndü!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bir hata oluştu: " + ex.Message);
+            }
+            finally
+            {
+                if (baglanti.State == ConnectionState.Open)
+                {
+                    baglanti.Close();
                 }
             }
         }
-    } 
-} 
+    }
+}

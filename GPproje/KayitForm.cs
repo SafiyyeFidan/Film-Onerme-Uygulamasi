@@ -19,8 +19,7 @@ namespace GPproje
         }
         private void KayitForm_Load(object sender, EventArgs e)
         {
-            // Burası bilerek boş bırakıldı, tasarım ekranının hata vermemesi için gerekli.
-        }
+            
 
         private void label2_Click(object sender, EventArgs e)
         {

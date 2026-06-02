@@ -63,6 +63,198 @@ namespace GPproje.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap _1072841942453552246 {
+            get {
+                object obj = ResourceManager.GetObject("1072841942453552246", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _117445502770641891 {
+            get {
+                object obj = ResourceManager.GetObject("117445502770641891", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1455554360_line_08_icon_icons_com_53314 {
+            get {
+                object obj = ResourceManager.GetObject("1455554360_line-08_icon-icons.com_53314", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _15551561210541207 {
+            get {
+                object obj = ResourceManager.GetObject("15551561210541207", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _16184879907991328 {
+            get {
+                object obj = ResourceManager.GetObject("16184879907991328", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2603712279604556 {
+            get {
+                object obj = ResourceManager.GetObject("2603712279604556", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _403brokenheart_100738 {
+            get {
+                object obj = ResourceManager.GetObject("403brokenheart_100738", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _774124931562382 {
+            get {
+                object obj = ResourceManager.GetObject("774124931562382", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _79587118407348762 {
+            get {
+                object obj = ResourceManager.GetObject("79587118407348762", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8303580559589739 {
+            get {
+                object obj = ResourceManager.GetObject("8303580559589739", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _985231164848252 {
+            get {
+                object obj = ResourceManager.GetObject("985231164848252", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9992430418057233 {
+            get {
+                object obj = ResourceManager.GetObject("9992430418057233", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap broken_heart_icon_icons_com_53248 {
+            get {
+                object obj = ResourceManager.GetObject("broken-heart_icon-icons.com_53248", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Download_AI_generated_Opera_theatre_advertisment_background_with_copy_space_for_free {
+            get {
+                object obj = ResourceManager.GetObject("Download AI generated Opera theatre advertisment background with copy space for f" +
+                        "ree", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Emoji_Cute_Icon_34089 {
+            get {
+                object obj = ResourceManager.GetObject("Emoji-Cute-Icon_34089", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Emoji_Hopeless_Icon_34093 {
+            get {
+                object obj = ResourceManager.GetObject("Emoji-Hopeless-Icon_34093", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Garfield {
+            get {
+                object obj = ResourceManager.GetObject("Garfield", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gratuit__Floral__Rétro__La_Texture_Images_de_fond__Damas_Schéma_Papier_Peint_Tissu_Contexte_Fond_de_photo_PNG_et_vecteurs {
+            get {
+                object obj = ResourceManager.GetObject("Gratuit  Floral, Rétro, La Texture Images de fond, Damas Schéma Papier Peint Tiss" +
+                        "u Contexte Fond de photo PNG et vecteurs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap heart_like_love_twitter_icon_127132 {
+            get {
+                object obj = ResourceManager.GetObject("heart_like_love_twitter_icon_127132", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_face_with_steam_from_nose_94 {
             get {
                 object obj = ResourceManager.GetObject("icons8-face-with-steam-from-nose-94", resourceCulture);
@@ -126,6 +318,75 @@ namespace GPproje.Properties {
         internal static System.Drawing.Bitmap Interstellar_film_poster {
             get {
                 object obj = ResourceManager.GetObject("Interstellar_film_poster", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Saqlain_khan_Red_Texture_image___Video_Editing_Material {
+            get {
+                object obj = ResourceManager.GetObject("Saqlain khan Red Texture image _ Video Editing Material", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Si_fueran_un_emoji_cual_seria__ {
+            get {
+                object obj = ResourceManager.GetObject("Si fueran un emoji cual seria__", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.IO.MemoryStream öğesine benzeyen System.IO.UnmanagedMemoryStream türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream sinema_sesi {
+            get {
+                return ResourceManager.GetStream("sinema_sesi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_06_02_at_11_11_34 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-06-02 at 11.11.34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_06_02_at_11_11_34__1_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-06-02 at 11.11.34 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_06_02_at_11_11_35 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-06-02 at 11.11.35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_06_02_at_11_111 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-06-02 at 11.111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

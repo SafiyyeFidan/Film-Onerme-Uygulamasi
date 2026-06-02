@@ -21,18 +21,21 @@ namespace GPproje
         {
             InitializeComponent();
             this.DoubleBuffered = true;
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
+
             if (Properties.Settings1.Default.BeniHatirla == true)
             {
-                // Eğer daha önce işaretlendiyse kutuları doldur ve kutucuğu seçili yap
+                
                 girisİsimtextbox.Text = Properties.Settings1.Default.KullaniciAdi;
                 girisSifretextbox.Text = Properties.Settings1.Default.Sifre;
                 checkBox1.Checked = true;
             }
-        }
+
+        } 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -82,6 +85,7 @@ namespace GPproje
 
         }
 
+       
 
 
 
@@ -90,15 +94,15 @@ namespace GPproje
         {
             if (checkBox1.Checked)
             {
-                // Kutucuk işaretliyse bilgileri bilgisayarın hafızasına yaz
+                
                 Properties.Settings1.Default.KullaniciAdi = girisİsimtextbox.Text;
                 Properties.Settings1.Default.Sifre = girisSifretextbox.Text;
                 Properties.Settings1.Default.BeniHatirla = true;
-                Properties.Settings1.Default.Save(); // Ayarları kalıcı olarak kaydet
+                Properties.Settings1.Default.Save(); 
             }
             else
             {
-                // Kutucuk işaretli değilse hafızadaki eski bilgileri temizle
+                
                 Properties.Settings1.Default.KullaniciAdi = "";
                 Properties.Settings1.Default.Sifre = "";
                 Properties.Settings1.Default.BeniHatirla = false;
@@ -122,19 +126,19 @@ namespace GPproje
 
                     int sonuc = (int)komut.ExecuteScalar();
 
-                    // 1. DURUM: EĞER BİLGİLER DOĞRUYSA (Kullanıcı bulunduysa)
+                   
                     if (sonuc > 0)
                     {
                         
-                        // SADECE VE SADECE BURASI ÇALIŞACAK
+                        
                         Form3 yeniForm = new Form3();
                         yeniForm.Show();
-                        this.Hide(); // Mevcut giriş sayfasını gizler
+                        this.Hide(); 
                     }
-                    // 2. DURUM: EĞER BİLGİLER YANLIŞSA
+                    
                     else
                     {
-                        // YENİ SAYFAYI AÇMAYACAK, SADECE BU MESAJI VERECEK
+                       
                         MessageBox.Show("Kullanıcı adı veya şifre hatalı! Lütfen tekrar deneyiniz.");
                     }
                 }

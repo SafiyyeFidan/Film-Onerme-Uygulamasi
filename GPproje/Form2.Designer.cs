@@ -51,7 +51,7 @@
             // 
             girisİsimLbl.AutoSize = true;
             girisİsimLbl.BackColor = Color.Transparent;
-            girisİsimLbl.Location = new Point(216, 109);
+            girisİsimLbl.Location = new Point(126, 120);
             girisİsimLbl.Name = "girisİsimLbl";
             girisİsimLbl.Size = new Size(99, 20);
             girisİsimLbl.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             girisSifrelbl.AutoSize = true;
             girisSifrelbl.BackColor = Color.Transparent;
-            girisSifrelbl.Location = new Point(216, 180);
+            girisSifrelbl.Location = new Point(115, 205);
             girisSifrelbl.Name = "girisSifrelbl";
             girisSifrelbl.Size = new Size(110, 20);
             girisSifrelbl.TabIndex = 1;
@@ -70,7 +70,7 @@
             // 
             // girisİsimtextbox
             // 
-            girisİsimtextbox.Location = new Point(415, 109);
+            girisİsimtextbox.Location = new Point(420, 113);
             girisİsimtextbox.Name = "girisİsimtextbox";
             girisİsimtextbox.Size = new Size(125, 27);
             girisİsimtextbox.TabIndex = 2;
@@ -78,7 +78,7 @@
             // 
             // girisSifretextbox
             // 
-            girisSifretextbox.Location = new Point(415, 177);
+            girisSifretextbox.Location = new Point(420, 205);
             girisSifretextbox.Name = "girisSifretextbox";
             girisSifretextbox.PasswordChar = '*';
             girisSifretextbox.Size = new Size(125, 27);
@@ -87,7 +87,7 @@
             // giristextbox
             // 
             giristextbox.BackColor = Color.Transparent;
-            giristextbox.Location = new Point(322, 275);
+            giristextbox.Location = new Point(272, 272);
             giristextbox.Name = "giristextbox";
             giristextbox.Size = new Size(94, 29);
             giristextbox.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.BackColor = Color.Transparent;
-            checkBox1.Location = new Point(503, 222);
+            checkBox1.Location = new Point(453, 248);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(109, 24);
             checkBox1.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.Red;
-            label7.Location = new Point(258, 331);
+            label7.Location = new Point(179, 338);
             label7.Name = "label7";
             label7.Size = new Size(122, 20);
             label7.TabIndex = 6;
@@ -119,7 +119,7 @@
             // button7
             // 
             button7.BackColor = Color.Salmon;
-            button7.Location = new Point(406, 324);
+            button7.Location = new Point(337, 331);
             button7.Name = "button7";
             button7.Size = new Size(106, 34);
             button7.TabIndex = 7;
@@ -131,7 +131,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(655, 471);
             Controls.Add(button7);
             Controls.Add(label7);
             Controls.Add(checkBox1);
@@ -142,7 +142,7 @@
             Controls.Add(girisSifretextbox);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form2";
-            StartPosition = FormStartPosition.CenterParent;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MOODLY";
             Load += Form2_Load;
             ResumeLayout(false);

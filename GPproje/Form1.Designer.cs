@@ -77,12 +77,11 @@
             // 
             sloganLabel.BackColor = Color.Transparent;
             sloganLabel.Font = new Font("Mistral", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            sloganLabel.Location = new Point(302, 245);
+            sloganLabel.Location = new Point(285, 245);
             sloganLabel.Name = "sloganLabel";
-            sloganLabel.Size = new Size(260, 36);
+            sloganLabel.Size = new Size(343, 36);
             sloganLabel.TabIndex = 5;
             sloganLabel.Text = "\"Ruhuna en uygun hikayeyi keşfet.\"";
-            sloganLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
             // 
@@ -134,6 +133,7 @@
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MOODLY";
             Load += Form1_Load;
             Resize += Form1_Resize;

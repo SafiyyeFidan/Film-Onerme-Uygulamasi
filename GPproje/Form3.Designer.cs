@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             timer1 = new System.Windows.Forms.Timer(components);
             hsgldntext = new Label();
             label1 = new Label();
@@ -43,11 +44,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
-            // 
-            // timer1
-            // 
-           // timer1.Interval = 30;
-            //timer1.Tick += timer1_Tick;
             // 
             // hsgldntext
             // 
@@ -157,8 +153,10 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(hsgldntext);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form3";
-            Text = "Form3";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "MOODLY";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
