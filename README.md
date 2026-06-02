@@ -9,4 +9,4 @@ Bu proje, kullanıcıların tercihlerine ve türlerine göre film önerileri sun
 
 ## 🚀 Proje Tanıtım Videosu
 
-<video src="./GPproje/tanitim.mp4" controls width="100%" style="max-width: 800px;"></video>
+<video src="GPproje/tanitim.mp4" controls width="100%" style="max-width: 800px;"></video>
