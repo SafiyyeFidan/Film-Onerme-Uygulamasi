@@ -9,4 +9,4 @@ Bu proje, kullanıcıların tercihlerine ve türlerine göre film önerileri sun
 
 ## 🚀 Proje Tanıtım Videosu
 
-https://github.com/SafiyyeFidan/Film-Onerme-Uygulamasi/raw/main/tanitim.mp4
+<video src="./GPproje/tanitim.mp4" controls width="100%" style="max-width: 800px;"></video>
