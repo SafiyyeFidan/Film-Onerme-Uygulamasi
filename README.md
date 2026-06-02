@@ -9,4 +9,4 @@ Bu proje, kullanıcıların tercihlerine ve türlerine göre film önerileri sun
 
 ## 🚀 Proje Tanıtım Videosu
 
-<video src="Ekran Kaydı 2026-06-02 114018.mp4" controls width="100%" style="max-width: 800px;"></video>
+<video src="tanitim.mp4" controls width="100%" style="max-width: 800px;"></video>
